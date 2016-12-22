@@ -1,4 +1,4 @@
-# alt-python3-halite-starter
+# halite-numpy-starter
 Alternative Halite starter package for Python3.
 
 A barebones, numpy-inspired fork of [erdman](https://github.com/erdman/alt-python3-halite-starter)'s hlt.py that focuses on
