@@ -6,7 +6,7 @@ Moves are tuples of x, y and dir, where dir behaves as in the
 base starter.
 
 GameMap.prod and GameMap.strn are the production and strength respectively.
-GameMap.owner contains the each cell's owner.
+GameMap.owner contains each cell's owner.
 """
 
 import sys
