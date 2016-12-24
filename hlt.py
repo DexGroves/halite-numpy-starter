@@ -22,9 +22,12 @@ class GameMap:
     and update on each new frame.
     """
 
-    def __init__(self, size_string, prod_string, my_id):
+    def __init__(self):
+        self.my_id = int(get_string())
+        size_string = get_string()
+        prod_string = get_string()
+
         self.width, self.height = tuple(map(int, size_string.split()))
-        self.my_id = my_id
 
         prod = [int(p) for p in prod_string.split()]
         self.prod = np.array(prod, dtype=int).reshape((self.height, self.width)).T
@@ -59,12 +62,6 @@ def send_string(s):
 
 def get_string():
     return sys.stdin.readline().rstrip('\n')
-
-
-def get_init():
-    my_id = int(get_string())
-    m = GameMap(get_string(), get_string(), my_id)
-    return my_id, m
 
 
 def send_init(name):
