@@ -1,8 +1,4 @@
 #!/bin/bash
 
-if hash python3 2>/dev/null; then
-    halite -d "30 30" "python3 RandomBot.py"  "python3 RandomBot.py"
+halite -d "25 25" "python3 OverkillBot.py"  "python3 OverkillBot.py"
 
-else
-    halite -d "30 30" "python RandomBot.py" "python RandomBot.py"
-fi

@@ -6,6 +6,7 @@ import numpy as np
 game_map = hlt.GameMap()
 hlt.send_init("RandomNumpyBot")
 
+
 while True:
     game_map.get_frame()
     owned_locs = np.transpose(np.where(game_map.owners == game_map.my_id))
